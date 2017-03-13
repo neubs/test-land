@@ -1,0 +1,23 @@
+body {
+    background: rgb(24, 45, 133);
+}
+
+div.container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    top: 30%;
+}
+
+#title {
+    color: white;
+    text-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.5);
+    font-size: 36px
+}
+
+.subtitle {
+    color: inherit;
+    text-shadow: inherit;
+    font-size: 28px;
+}
