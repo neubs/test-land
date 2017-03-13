@@ -1,5 +1,6 @@
 body {
     background: rgb(24, 45, 133);
+    font-family: Helvetica, sans-serif;
 }
 
 div.container {
@@ -12,12 +13,14 @@ div.container {
 
 #title {
     color: white;
-    text-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.5);
-    font-size: 36px
+    text-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .subtitle {
-    color: inherit;
-    text-shadow: inherit;
     font-size: 28px;
+    color: white;
+    letter-spacing: 1px;
 }
