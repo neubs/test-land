@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    var capacity = 24;
+    var passengerList = [];
+    function addPassenger(){
+      if (passengerList.length >= capacity){
+        alert('The Boat is full!');
+        return false;
+      }
+      else {
+        var passengerName = prompt('Who would you like to add?');
+        if (passengerName !== undefined){
+          for (var i = 0; i < passengerList.length; i++){
+            if (passengerList[i] === undefined){
+              passengerList[i] = passengerName;
+              alert(passengerName + " has been added to the manifest");
+              return true;
+            }
+            else{
+              passengerList.push(passengerName);
+              alert(passengerName + " has been added to the manifest");
+              return true;
+            }
+          }
+        }
+        else {
+          return false;
+        }
+      }
+    }
+    function removePassenger() {
+      if (passengerList.length === 0){
+        alert('The Boat is empty!');
+        return false;
+      }
+      else {
+        var passengerName = prompt('Who would you like to remove?');
+        if (passengerName !== undefined){
+          for (var i = 0; i < passengerList.length; i++){
+            if (passengerList[i] == passengerName){
+              passengerList[i] = undefined;
+              alert(passengerName + " has been removed from the manifest");
+              return true;
+            }
+            else{
+              alert(passengerName + " is not on the manifest");
+              return false;
+            }
+          }
+        }
+        else {
+          return false;
+        }
+      }
+    }
+    function viewPassengers(){
+      alert(passengerList);
+    }
+
+  </script>
+</head>
+<body>
+  <h1>Welcome to FairHurbur!</h1>
+  <a href="javascript:addPassenger();">Add Passenger</a>
+  <a href="javascript:removePassenger();">Remove Passenger</a>
+  <a href="javascript:viewPassengers();">View Manifest</a>
+</body>
+</html>
